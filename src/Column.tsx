@@ -1,4 +1,5 @@
-import { ColumnContainer, CardContainer, ColumnTitle } from './styles';
+import { Card } from './Card';
+import { ColumnContainer, ColumnTitle } from './styles';
 
 type ColumnProps = {
   text: string;
@@ -8,9 +9,9 @@ export const Column = ({ text }: ColumnProps) => {
   return (
     <ColumnContainer>
       <ColumnTitle>{text}</ColumnTitle>
-      <CardContainer>Generate app scaffold</CardContainer>
-      <CardContainer>Learn TypeScript</CardContainer>
-      <CardContainer>Begin to use static typing</CardContainer>
+      <Card text='Generate app scaffold' />
+      <Card text='Learn TypeScript' />
+      <Card text='Begin to use static typing' />
     </ColumnContainer>
   );
 };
