@@ -15,7 +15,7 @@ export const Column = ({ text }: ColumnProps) => {
       <Card text='Begin to use static typing' />
       <AddNewItem
         toggleButtonText='+ Add new card'
-        onAdd={() => console.log('New Item Added')}
+        onAdd={(e) => console.log(e)}
         dark
       />
     </ColumnContainer>

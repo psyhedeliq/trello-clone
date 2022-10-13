@@ -9,7 +9,7 @@ export const App = () => {
       <Column text='Todo' />
       <AddNewItem
         toggleButtonText='+ Add new list'
-        onAdd={() => console.log('Item created')}
+        onAdd={(e) => console.log(e)}
       />
     </AppContainer>
   );
