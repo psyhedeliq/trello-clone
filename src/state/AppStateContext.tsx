@@ -1,4 +1,4 @@
-import { createContext, FC, useContext } from 'react';
+import { createContext, useContext } from 'react';
 
 type Task = {
   id: string;
@@ -14,6 +14,15 @@ type List = {
 export type AppState = {
   lists: List[];
 };
+
+type AppStateContextProps = {
+  lists: List[];
+  getTasksByListId(id: string): Task[];
+};
+
+interface Props {
+  children: React.ReactNode;
+}
 
 const appData: AppState = {
   lists: [
@@ -35,18 +44,9 @@ const appData: AppState = {
   ],
 };
 
-type AppStateContextProps = {
-  lists: List[];
-  getTasksByListId(id: string): Task[];
-};
-
 const AppStateContext = createContext<AppStateContextProps>(
   {} as AppStateContextProps
 );
-
-interface Props {
-  children: React.ReactNode;
-}
 
 export const AppStateProvider: React.FC<Props> = ({ children }) => {
   const { lists } = appData;
