@@ -6,7 +6,6 @@ import { addList } from './state/actions';
 
 export const App = () => {
   const { lists, dispatch } = useAppState();
-  console.log(lists.map((list) => list));
 
   return (
     <AppContainer>
