@@ -25,6 +25,7 @@ export const Card = ({ text, id, columnId, isPreview }: CardProps) => {
   });
   const [, drop] = useDrop({
     accept: 'CARD',
+    // we need to throttle this function of the way event triggering works when you hover something, to avoid running into some rae condition issues. The hover event that well use might be triggered to frequently, so we need to throttle it.
     hover: throttle(200, () => {
       if (!draggedItem) {
         return;
