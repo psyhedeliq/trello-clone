@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/trello-backend/node_modules
 /.pnp
 .pnp.js
 
