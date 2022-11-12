@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts for the backend
+
+In the project `trello-backend` directory, you can run:
+
+### `yarn start`
+
+Data will be preserved upon reloading the page.
+
+Runs the backend on [http://localhost:4000](http://localhost:4000)
+
 ## Available Scripts
 
 In the project directory, you can run:
