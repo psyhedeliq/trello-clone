@@ -9,8 +9,9 @@ type InjectedProps = {
 type PropsWithoutInjected<TBaseProps> = Omit<TBaseProps, keyof InjectedProps>;
 
 export function withInitialState<TProps>(
-  WrappedComponent: React.ComponentType<PropsWithoutInjected<TProps>> &
-    InjectedProps
+  WrappedComponent: React.ComponentType<
+    PropsWithoutInjected<TProps> & InjectedProps
+  >
 ) {
   return (props: PropsWithoutInjected<TProps>) => {
     const [initialState, setInitialState] = useState<AppState>({

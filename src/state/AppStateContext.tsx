@@ -4,7 +4,7 @@ import { Action } from './actions';
 import { useImmerReducer } from 'use-immer';
 import { DragItem } from '../DragItem';
 import { save } from '../api';
-import { withInitialState } from '../WithInitialState';
+import { withInitialState } from '../withInitialState';
 
 type AppStateContextProps = {
   lists: List[];
