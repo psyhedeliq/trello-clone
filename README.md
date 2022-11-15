@@ -9,6 +9,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Runs the backend on [http://localhost:4000](http://localhost:4000).
 
+## You can verify the backend is running correctly by sending a curl
+
+* Endpoint to store data:
+
+`curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"lists":[]}' \
+  http://localhost:4000/save`
+
+  Response: `{"success": true}`
+
+* Endpoint to retrieve data:
+
+`curl http://localhost:4000/load`
+
+  Response: `{"lists": []}`
+
 ## Available Scripts for the backend
 
 In the project `trello-backend` directory, you can run:
