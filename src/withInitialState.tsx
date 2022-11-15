@@ -34,7 +34,7 @@ export function withInitialState<TProps>(
         setIsLoading(false);
       };
       fetchInitialState();
-    });
+    }, []);
 
     if (isLoading) {
       return <div>Loading...</div>;
