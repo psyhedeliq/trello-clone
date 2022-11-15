@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts to run both frontend and backend
+
+### `npm run dev`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the backend on [http://localhost:4000](http://localhost:4000).
+
 ## Available Scripts for the backend
 
 In the project `trello-backend` directory, you can run:
